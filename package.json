@@ -1,0 +1,61 @@
+{
+  "name": "drobs-users",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "test": "npm run test",
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "@emotion/cache": "^11.11",
+    "@emotion/react": "^11.11",
+    "@emotion/styled": "^11.11",
+    "@mui/icons-material": "^5.15",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "drobs-local-storage-react": "^1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2",
+    "prettier": "3.3.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-webcam": "^7.2",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@emotion/cache": "^11.11",
+    "@emotion/react": "^11.11",
+    "@emotion/styled": "^11.11",
+    "@mui/icons-material": "^5.15",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15",
+    "drobs-local-storage-react": "^1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-webcam": "^7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/ddrobecq/drobs-users.git"
+  },
+  "keywords": [
+    "react",
+    "users"
+  ],
+  "author": "Drobs",
+  "license": "MIT",
+  "description": "manage users list via API (list, get, put post)",
+  "main": "./dist/user-list.js",
+  "exports": {
+    ".": "./dist/user-list.js",
+    "./avatar" : "./dist/user-avatar.js",
+    "./card" : "./dist/uers-card.js",
+    "./form" : "./dist/user-form.js",
+    "./list" : "./dist/user-list.js",
+    "./info" : "./dist/user-info.js",
+    "./select" : "./dist/user-select.js"
+  }
+}
