@@ -3,7 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserName = void 0;
+exports.default = UserInfo;
+exports.UserName = UserName;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const fetchAPI_1 = __importDefault(require("./lib/fetchAPI"));
@@ -16,7 +17,6 @@ function UserInfo(props) {
             react_1.default.createElement(material_1.Stack, { direction: "row", alignItems: "center", spacing: 2 }, id === 0 ? (react_1.default.createElement(UserInfoNew, { size: props.size }) //new player
             ) : (react_1.default.createElement(UserInfoData, { url: props.url, id: props.id, size: props.size }))))));
 }
-exports.default = UserInfo;
 function UserInfoNew(props) {
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement(user_avatar_1.default, { id: 0, size: props.size }),
@@ -32,4 +32,3 @@ function UserName(props) {
     const width = props.size === "small" ? 100 : 200;
     return (react_1.default.createElement(material_1.Typography, { align: "center", variant: "h1" }, props.name !== "" ? (props.name) : (react_1.default.createElement(material_1.Skeleton, { variant: "text", width: width }))));
 }
-exports.UserName = UserName;

@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = UserSelectDialog;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const user_list_1 = __importDefault(require("./user-list"));
@@ -21,4 +22,3 @@ function UserSelectDialog(props) {
             react_1.default.createElement(material_1.DialogActions, null,
                 react_1.default.createElement(material_1.Button, { onClick: handleCancel }, "Annuler")))));
 }
-exports.default = UserSelectDialog;

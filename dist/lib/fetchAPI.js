@@ -1,6 +1,7 @@
 "use client";
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = useFetch;
 const react_1 = require("react");
 // **********************************************
 // function : useFetch
@@ -27,7 +28,6 @@ function useFetch(url, method, strPayLoad) {
     }, [url, method, strPayLoad, bRetry]);
     return [data, isLoading];
 }
-exports.default = useFetch;
 /* RETURN AJAX API CALL */
 function callAPI(path, method, payLoad, retry) {
     return new Promise((resolve, reject) => {

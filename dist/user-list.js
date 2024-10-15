@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Users;
 const material_1 = require("@mui/material");
 const react_1 = __importDefault(require("react"));
 const fetchAPI_1 = __importDefault(require("./lib/fetchAPI"));
@@ -22,7 +23,6 @@ function Users(props) {
                 react_1.default.createElement(material_1.Skeleton, { variant: "rounded", height: height }),
                 react_1.default.createElement(material_1.Skeleton, { variant: "rounded", height: height }))),
             data.length > 0 &&
-                data.map((user, index) => (react_1.default.createElement(user_card_1.default, { url: props.url, key: index, id: user.usr_id, name: user.usr_name, direction: direction, actions: actions, size: props.size }))),
-            react_1.default.createElement(user_card_1.default, { url: props.url, key: "new", id: 0, name: "", direction: direction, actions: actions, size: props.size })));
+                data.map((user, index) => (react_1.default.createElement(user_card_1.default, { url: props.url, key: index, id: user.usr_id, name: user.usr_name, direction: direction, actions: actions, size: props.size, handleSelect: props.handleSelect ? props.handleSelect : undefined }))),
+            react_1.default.createElement(user_card_1.default, { url: props.url, key: "new", id: 0, name: "", direction: direction, actions: actions, size: props.size, handleSelect: props.handleSelect ? props.handleSelect : undefined })));
 }
-exports.default = Users;

@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = UserPictureDialog;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const react_webcam_1 = __importDefault(require("react-webcam"));
@@ -48,4 +49,3 @@ function UserPictureDialog(props) {
             react_1.default.createElement(material_1.Button, { onClick: reverse, startIcon: react_1.default.createElement(Cameraswitch_1.default, null) }, "Reverse"),
             react_1.default.createElement(material_1.Button, { onClick: capture, startIcon: react_1.default.createElement(CameraAlt_1.default, null), color: "success" }, "Prendre"))));
 }
-exports.default = UserPictureDialog;

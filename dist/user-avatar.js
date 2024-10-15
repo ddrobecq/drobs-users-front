@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = UserAvatar;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const PersonAdd_1 = __importDefault(require("@mui/icons-material/PersonAdd"));
@@ -15,7 +16,6 @@ function UserAvatar(props) {
     else
         return react_1.default.createElement(UserAvatarImage, Object.assign({}, props));
 }
-exports.default = UserAvatar;
 function UserAvatarNew(props) {
     let fontSize;
     let size;

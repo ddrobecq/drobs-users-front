@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { UserSize } from "./lib/common";
 type UserProps = {
     url: string;

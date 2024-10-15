@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = UserSave;
 const react_1 = __importDefault(require("react"));
 const lab_1 = require("@mui/lab");
 const fetchAPI_1 = __importDefault(require("./lib/fetchAPI"));
@@ -49,4 +50,3 @@ function UserSave(props) {
     return (react_1.default.createElement(react_1.default.Fragment, null, error ? (react_1.default.createElement(material_1.Button, { color: "error" }, "Erreur")) : (react_1.default.createElement(lab_1.LoadingButton, { loading: isSaving, disabled: true },
         react_1.default.createElement("span", null, "Enregistrer")))));
 }
-exports.default = UserSave;

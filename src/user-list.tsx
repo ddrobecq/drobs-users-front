@@ -48,6 +48,7 @@ export default function Users(props: UserProps): JSX.Element {
               direction={direction}
               actions={actions}
               size={props.size}
+              handleSelect={props.handleSelect ? props.handleSelect : undefined}
             />
           ))}
         <UserCard
@@ -58,6 +59,7 @@ export default function Users(props: UserProps): JSX.Element {
           direction={direction}
           actions={actions}
           size={props.size}
+          handleSelect={props.handleSelect ? props.handleSelect : undefined}
         />
       </Stack>
     );

@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = UserForm;
 const react_1 = __importDefault(require("react"));
 const material_1 = require("@mui/material");
 const CameraAlt_1 = __importDefault(require("@mui/icons-material/CameraAlt"));
@@ -47,4 +48,3 @@ function UserForm(props) {
             isUpdating ? (react_1.default.createElement(user_save_1.default, { url: props.url, id: props.id, name: name, picture: picture, onClose: onValidate })) : (react_1.default.createElement(material_1.Button, { color: "success", onClick: onUpdate, startIcon: react_1.default.createElement(Save_1.default, null) }, "Enregistrer"))),
         react_1.default.createElement(user_picture_1.default, { open: openCapture, onClose: handleCloseCapture })));
 }
-exports.default = UserForm;
