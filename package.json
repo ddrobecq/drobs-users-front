@@ -8,7 +8,7 @@
     "publish": "npm publish --access public"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^22.0.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint-config-next": "14.2",
